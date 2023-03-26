@@ -1,0 +1,50 @@
+.banner {
+    position: relative;
+    height: 100vh;
+    background: url('../img/main/main_banner.jpg') center/cover no-repeat;
+    // .banner__body
+    &__body {
+        padding-top: 30vh;
+        padding-left: 20%;
+    }
+    // .banner__logo
+    &__logo {
+        width: 332px;
+        position: relative;
+        margin-bottom: 35px;
+        &:before {
+            content:'NEW';
+            position: absolute;
+            font-size: 20px;
+            top: -18px;
+            left: -50px;
+            color: #92E7E4;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    //.banner__title
+    &__title {
+        max-width: 400px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 138%;
+        color: #FFFFFF;
+        margin-bottom: 63px;
+    }
+    // .banner__links
+    &__links {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .banner__btn
+    &__btn {
+        width: 208px;
+    }
+}
+
+

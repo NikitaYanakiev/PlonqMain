@@ -1,0 +1,29 @@
+.certificate {
+    padding: 150px 0;
+    background-color: #F9F9F9;
+    // .certificate__title
+    &__title {
+        @media (min-width:1201px) {
+            padding-left: 120px;
+        }
+        margin-bottom: 120px;
+
+    }
+    // .certificate__body
+    &__body {
+        max-width: 1230px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    // .certificate__item
+    &__item {
+        flex: 0 0 320px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    z-index: 110;
+    transition: all 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    @media (max-width:992px){
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

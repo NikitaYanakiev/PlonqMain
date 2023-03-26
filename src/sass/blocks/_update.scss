@@ -1,0 +1,39 @@
+.update {
+    overflow: hidden;
+    padding: 50px 0;
+    // .update__wrapper
+    &__wrapper {
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // .update__body
+    &__body {
+        flex: 0 0 420px;
+    }
+    // .update__title
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 45px;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+    // .update__text
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #000000;
+    }
+    // .update__img
+    &__img {
+        flex: 0 1 507px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

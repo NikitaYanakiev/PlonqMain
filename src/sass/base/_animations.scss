@@ -1,0 +1,94 @@
+.anim-left {
+    transform: translateX(-10%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s ease 0.3s;
+}
+
+.anim-left.anim-active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s ease 0.3s;
+}
+
+.anim-right {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.2s ease 0.3s;
+    transform: translateX(20%);
+}
+
+.anim-right.anim-active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    transition: all 1.2s ease 0.3s;
+}
+
+.anim-down {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: all 1.2s ease;
+}
+
+.anim-down.anim-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 1.2s ease ;
+}
+
+.anim-show {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.2s ease 0.3s;
+}
+
+.anim-show.anim-active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1.2s ease 0.3s;
+}
+
+
+.anim-hands {
+    &_up {
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.7s ease 0.3s;
+    }
+    &_pod {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1.2s ease;
+    }
+    &_down {
+        transform: translateY(50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.7s ease 0.3s;
+    }
+}
+
+.anim-hands.anim-active {
+    .anim-hands_up {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.7s ease;
+    }
+    .anim-hands_pod {
+        opacity: 1;
+        visibility: visible;
+        transition: all 1.2s ease;
+    }
+    .anim-hands_down {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.7s ease;
+    }
+}

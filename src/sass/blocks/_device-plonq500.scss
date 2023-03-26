@@ -1,0 +1,36 @@
+.device-plonq500 {
+    padding: 150px 0;
+    background-color: #F9F9F9;
+    overflow: hidden;
+    // .device-plonqx__wrapper
+    &__wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .device-plonqx__body
+    &__body {
+        flex: 0 0 330px;
+    }
+    // .device-plonqx__title
+    &__title {
+        margin-bottom: 28px;
+    }
+    // .device-plonqx__text
+    &__text {
+        span {
+            font-weight: 500;
+        }
+    }
+    // .device-plonqx__img
+    &__img {
+        flex: 0 0 528px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+

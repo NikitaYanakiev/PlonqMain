@@ -1,0 +1,63 @@
+@import 'base/null';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'libs/fonts';
+@import 'libs/fonts-icon';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    font-family: 'Gotham Pro', 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body.lock {
+    overflow: hidden
+}
+
+@import 'blocks/buttons';
+@import 'blocks/title';
+@import 'base/animations';
+
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/novelty';
+@import 'blocks/products';
+@import 'blocks/footer';
+@import 'blocks/about';
+
+@import 'blocks/banner-plonq500';
+@import 'blocks/wish';
+@import 'blocks/design';
+@import 'blocks/puff';
+@import 'blocks/vapor';
+@import 'blocks/components';
+@import 'blocks/safe';
+@import 'blocks/tastes';
+@import 'blocks/characteristics';
+@import 'blocks/certificate';
+@import 'blocks/search';
+
+@import 'blocks/problem';
+@import 'blocks/solution';
+@import 'blocks/app';
+@import 'blocks/work';
+@import 'blocks/update';
+
+@import 'blocks/main-plonqx';
+@import 'blocks/capsule';
+@import 'blocks/device-plonq500';
+@import 'blocks/composition';
+
+@import 'blocks/shop-map';
+@import 'blocks/preloader';
+
+@import 'blocks/media';
+@import 'blocks/media02';
+@import 'blocks/media03';
+@import 'blocks/media04';

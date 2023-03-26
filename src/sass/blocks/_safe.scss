@@ -1,0 +1,62 @@
+.safe {
+    padding: 150px 0 0;
+    position: relative;
+    background-color: #F9F9F9;
+    min-height: 900px;
+    overflow: hidden;
+    @media (min-width:1401px) {
+        min-height: 1080px;
+    }
+    // .safe__body
+    &__body {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template: minmax(66px, auto) minmax(64px, auto)/ 80px 340px;
+        gap: 100px 24px;
+        @media (min-width:1201px) {
+            padding-left: 30px;
+        }
+    }
+    // .safe__title
+    &__title {
+        position: relative;
+        top: -5px;
+    }
+    // .safe__text
+    &__text {
+        grid-area: 2/2/3/3;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    // .safe__img
+    &__img {
+        position: absolute;
+        pointer-events: none;
+        bottom: 0;
+        right: 0;
+        width: 1300px;
+        @media (min-width:1401px) {
+            width: 1560px;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    // .safe__science
+    &__science {
+        position: relative;
+        z-index: 3;
+        width: 80px;
+        height: 80px;
+        margin-top: 117px;
+        margin-left: 135px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+

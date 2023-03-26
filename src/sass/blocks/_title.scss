@@ -1,0 +1,30 @@
+.title {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 121%;
+    text-transform: uppercase;
+    color: #000000;
+    &_white {
+        color:#fff;
+    }
+    &_fz40 {
+        font-size: 40px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+}
+
+.number {
+    width: 80px;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+}

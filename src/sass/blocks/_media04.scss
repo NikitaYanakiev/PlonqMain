@@ -1,0 +1,144 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz40 {
+            font-size: 23px;
+            line-height: 33px;
+        }
+    }
+    .text {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .main-plonqx {
+        padding: 100px 0 50px 0;
+        &__wrapper {
+            max-width: 600px;
+        }
+        &__body {
+            flex: 0 0 320px;
+        }
+        &__img {
+            flex: 0 0 180px;
+        }
+    }
+    .capsule {
+        &__wrapper {
+            max-width: 600px;
+        }
+        &__body {
+            flex: 0 0 320px;
+        }
+    }
+    .device-plonq500 {
+        padding: 50px 0;
+        &__wrapper {
+            max-width: 670px;
+        }
+        &__body {
+            flex: 0 1 310px;
+        }
+        &__img {
+            flex: 0 1 338px;
+        }
+    }
+    .composition {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__subtitle {
+            font-size: 15px;
+            line-height: 21px;
+            margin-bottom: 25px;
+        }
+        &__item {
+            flex: 0 1 320px;
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz40 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .main-plonqx {
+        &__wrapper {
+            display: block;
+        }
+        &__body {
+           max-width: 380px;
+           margin: 0 auto 36px auto;
+        }
+        &__img {
+            max-width: 150px;
+            margin: 0 auto;
+        }
+    }
+    .capsule {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__img {
+            order: 2;
+            flex: 0 0 auto;
+            width: 136px;
+        }
+        &__body {
+            order: 1;
+            flex: 0 0 auto;
+            max-width: 380px;
+            margin: 0 auto 25px auto;
+        }
+    }
+    .device-plonq500 {
+        &__wrapper {
+            display: block;
+        }
+        &__body {
+            max-width: 380px;
+            margin: 0 auto 36px auto;
+        }
+        &__img {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
+    .composition {
+        &__title {
+            margin-bottom: 35px;
+        }
+        &__wrapper {
+            gap:35px 0;
+        }
+        
+        &__subtitle {
+            max-width: 230px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.vapor {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    margin-top: -3px;
+    // .vapor__container
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // .vapor__body
+    &__body {
+        display: grid;
+        grid-template: minmax(50px, auto) minmax(64px, auto)/ 80px 480px;
+        gap: 80px 24px;
+        @media (min-width:1201px) {
+            padding-left: 30px;
+        }    }
+    // .vapor__title
+    &__title {
+        position: relative;
+        top: 10px;
+    }
+    // .vapor__text
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: #FFFFFF;
+        grid-area: 2/2/3/3;
+    }
+    // .vapor__img
+    &__img {
+        flex: 0 1 680px;
+        align-self: flex-end;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

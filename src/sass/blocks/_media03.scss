@@ -1,0 +1,249 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .app {
+        &__wrapper {
+            padding: 80px 50px;
+        }
+    }
+    .work {
+        &__wrapper {
+            padding: 80px 100px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .problem {
+        padding: 100px 0 50px 0;
+        &__wrapper {
+            display: block;
+        }
+        &__body {
+            margin-bottom: 68px;
+            max-width: 485px;
+        }
+        &__img {
+            max-width: 632px;
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 23px;
+            line-height: 33px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+    .solution {
+        padding: 50px 0;
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__img {
+            order: 2;
+            max-width: 672px;
+            flex: 0 0 auto;
+            margin-bottom: 50px;
+        }
+        &__body {
+            order: 1;
+            max-width: 364px;
+            flex: 0 1 auto;
+        }
+        &__list {
+            margin-bottom: 46px;
+        }
+        &__btn {
+            max-width: 160px;
+            order: 3;
+            align-self: center;
+            margin-left: 0;
+            font-size: 11px;
+        }
+        &__title {
+            font-size: 23px;
+            line-height: 33px;
+            margin-bottom: 40px;
+        }
+    }
+    .app {
+        background-color: #F9F9F9;
+        &__wrapper {
+            width: 100%;
+            padding: 70px 0;
+        }
+        &__body {
+            flex: 0 0 320px;
+        }
+        &__title {
+            font-size: 23px;
+            line-height: 33px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+    .work {
+        background-color: #F9F9F9;
+        &__wrapper {
+            width: 100%;
+            padding: 70px 0;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            font-size: 23px;
+            line-height: 33px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+    .update {
+        &__body {
+            flex: 0 0 280px;
+        }
+        &__img {
+            flex: 0 1 350px;
+        }
+        &__title {
+            font-size: 23px;
+            line-height: 33px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .app {
+        background-color: #F9F9F9;
+        &__wrapper {
+            padding: 0;
+        }
+        &__body {
+            flex: 0 0 200px;
+        }
+        &__img {
+            flex: 0 0 300px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    .work {
+        &__wrapper {
+            padding: 0;
+        }
+        &__body {
+            flex:0 0 250px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &__text {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    .update {
+        &__body {
+            flex: 0 0 230px;
+        }
+        &__img {
+            flex: 0 1 270px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__text {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .app {
+        &__wrapper {
+            display: block;
+        }
+        &__body {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        &__img {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+    .work {
+        &__title {
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
+        &__subtitle {
+            margin-bottom: 10px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__img {
+            order: 2;
+            flex: 0 0 auto;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        &__body {
+            max-width: 350px;
+            flex: 0 0 auto;
+            order: 1;
+            margin-bottom: 30px;
+        }
+    }
+    .update {
+        &__wrapper {
+            display: block;
+        }
+        &__body {
+            width: 100%; 
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+}

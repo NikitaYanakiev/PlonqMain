@@ -1,0 +1,625 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        .container {
+            max-width: 100%;
+        }
+    }
+    .banner {
+        &__body {
+            padding-top: 20vh;
+            padding-left: 10%;
+        }
+    }
+    .products {
+        &__wrapper {
+            column-gap: 100px;
+            row-gap: 150px;
+            grid-template-columns: repeat(2,  minmax(400px, 435px));
+        }
+        &__item {
+            grid-template-columns: 170px 210px;
+            column-gap: 46px;
+        }
+        &__img {
+            width: 170px;
+            &_big {
+                width: 250px;
+                margin-left: -30px;
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            margin-right: 100px;
+        }
+        &__form {
+            flex: 1 1 auto;
+        }
+        &__body {
+            margin-bottom: 40px;
+        }
+        &__menu {
+            flex: 1 1 100%;
+            justify-content: space-between;
+            order: 1;
+            margin:0 0 40px 0;
+        }
+        &__social {
+            order: 3;
+            &-icon {
+                margin-bottom: 30px;
+            }
+        }
+        &__mobile {
+            display: inline-flex;
+            order: 2;
+            &-item {
+                grid-template: 25px 25px/ 28px 107px;
+                &:not(:last-child){
+                    margin: 0 30px 0 0;
+                }
+            }
+        }
+    }
+    .about {
+        &__text {
+            width: 260px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        height: 50px;
+        padding: 10px 0;
+        &__location {
+            display: block;
+        }
+        &__burger {
+            position: relative;
+            display: block;
+            width: 22px;
+            height: 22px;
+            z-index: 12;
+            span {
+                position: absolute;
+                width: 22px;
+                height: 2px;
+                background-color: #000;
+                right: 0;
+                top: 11px;
+                transition: all 0.3s ease;
+                border-radius: 8px;
+                &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    width: 22px;
+                    height: 2px;
+                    background-color: #000;
+                    top: -8px; 
+                    right: 0;
+
+                    transition: all 0.3s ease;
+                    border-radius: 8px;
+
+                }
+                &:after {
+                    top: 8px;
+                    width: 11px;
+                }
+            }
+        }
+        &__menu {
+            position: fixed;
+            overflow: auto;
+            z-index: 8;
+            left: 0;
+            top: -100%;
+            padding: 80px 0 0 0;
+            background-color: rgba(#f9f9f9, 0.85);
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease;
+            
+        }
+        &__list {
+            display: block;
+        }
+        &__item {
+            padding: 40px 0;
+            text-align: center;
+        }
+        &__link {
+            margin: 0;
+            font-size: 38px;
+            &:hover {
+                color:#000;
+            }
+        }
+    }
+    .banner {
+        background-position: 78% 100%; 
+        &__body {
+            max-width: 320px;
+            padding: 150px 0 0 0;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+        &__logo {
+            width: 218px;
+            margin: 0 auto 28px;
+            &:before{
+                font-size: 14px;
+                top: -14px;
+                left: -35px;
+            }
+        }
+        &__title {
+           flex: 1 1 auto;
+           font-size: 25px;
+           margin-bottom: 0;
+        }
+        &__links {
+            position: absolute;
+            bottom: 62px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__btn {
+            border: 1px solid #000;
+            color:#000;
+            &:hover {
+                color: #fff;
+               
+                box-shadow: inset 0 -100px 0 0 #000000;
+            }
+        }
+        &__link {
+            &::before {
+                color:#000;
+            }
+            &::after {
+                border-bottom: 3px double #000;
+            }
+            span {
+                color: #000;
+            }
+        }
+    }
+    .novelty {
+        padding: 147px 0 80px 0;
+        &__container {
+            display: block;
+        }
+        &__body {
+            text-align: center;
+            width: 360px;
+            margin: 0 auto;
+        }
+        &__logo {
+            margin: 0 auto 30px auto;
+            width: 196px;
+           
+        }
+        &__text {
+            font-size: 25px;
+            line-height: 32px;
+        }
+        &__img {
+            width: 375px;
+            margin: 0 auto;
+        }
+        &__links {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .products {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            
+        }
+        &__item {
+            justify-content: center;
+        }
+        &__img {
+            &_big {
+                margin-left: -80px;
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            display: none;
+        }
+        &__form {
+            display: flex;
+            flex: 0 1 auto;
+        }
+        &__legend {
+            margin:0 15px 0 0;
+            font-size: 12px;
+            line-height: 21px;
+        }
+        &__input {
+            flex: 0 0 164px;
+            margin-right: 13px;
+            height: 20px;
+            padding: 0 10px;
+        }
+        &__btn {
+            flex: 0 1 84px;
+            padding: 4px 6px;
+            font-size: 10px;
+            line-height: 0px;
+        }
+        &__lang {
+            span {
+                height: 10px;
+            }
+            &-item {
+                font-size: 12px;
+            }
+        }
+        &__list {
+            &:first-child {
+                flex: 0 1 144px;
+                margin-right: 0px;
+            }
+            &:nth-child(2) {
+                flex: 0 1 144px;
+                margin-right: 0;
+            }
+            &:nth-child(3) {
+                flex: 0 1 144px;
+                margin-right: 0;
+            }
+            &:nth-child(4) {
+                flex: 0 1 144px;
+            }
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &-title {
+                font-size: 12px;
+            }
+        }
+        &__link {
+            font-size: 12px;
+        }
+        &__mobile {
+            &-item {
+                column-gap: 10px;
+            }
+            &-icon {
+                &::before {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__social {
+            &-icon {
+                &:before {
+                    font-size: 19px;
+                }
+            }
+            &-text {
+                font-size: 11px;
+                line-height: 17px;
+            }
+        }
+        &__text {
+            font-size: 11px;
+            line-height: 21px;
+            max-width: 672px;
+        }
+    }
+    .about {
+        padding: 50px 0 140px 0;
+        &__wrapper {
+            grid-template: minmax(600px, auto) minmax(576px, auto) minmax(576px, auto) / 672px;
+            row-gap: 24px;
+        }
+        &__shops {
+            grid-column: 1 span;
+        }
+        &__map {
+            height: 368px;
+        }
+        &__item {
+            padding: 0 72px;
+        }
+        &__pod {
+            flex:0 0 100px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .footer {
+        &__form {
+            display: block;
+            margin: 0 auto;
+        }
+        &__legend {
+            margin:0 0 24px 0;
+        }
+        &__input {
+            width: 137px;
+            height: 24px;
+            margin-right: 15px;
+        }
+        &__btn {
+            width: 100px;
+            padding: 11px 14px;
+        }
+        &__lang {
+            flex: 1 1 100%;
+            margin-top: 10px;
+            &-body {
+                display: block;
+            }
+        }
+        &__body {
+            justify-content: center;
+        }
+        &__menu {
+            display: grid;
+            grid-template: auto auto / minmax(120px, 180px) minmax(120px, 180px) ;
+            row-gap: 21px;
+            column-gap:32px;
+            justify-content: center;
+        }
+        &__item {
+            &-title {
+                font-size: 11px;
+            }
+        }
+        &__link {
+            font-size: 10px;
+        }
+        &__mobile {
+            flex: 1 1 100%;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            &-item {
+                grid-template: auto auto/ 28px 91px;
+            }
+            &-title {
+                font-size: 10px;
+                line-height: 18px;
+            }
+            &-subtitle{
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+        &__social {
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &-text {
+                font-size: 8px;
+                line-height: 13px;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 10px;
+            text-align: left;
+        }
+    }
+    .about {
+        padding: 30px 0 80px 0;
+        &__wrapper {
+            grid-template: minmax(600px, auto) minmax(400px, auto) minmax(400px, auto) / 100%;
+            row-gap: 24px;
+        }
+        &__map {
+            height: 300px;
+        }
+        &__item {
+            padding: 0 52px;
+        }
+        &__pod {
+            flex:0 0 70px;
+        }
+        &__app {
+            flex: 0 0 180px;
+        }
+    }
+    
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header {
+        &__item {
+            padding: 20px 0;
+        }
+        &__link {
+            font-size: 24px;
+        }
+    }
+    .banner {
+        background-position: 72% 100%;
+        &__body {
+            padding: 80px 0 0 0;
+        }
+        &__logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__links {
+           width: 257px;
+           bottom: 23px;
+        }
+        &__link {
+            flex:0 0 108px;
+        }
+        &__btn {
+            flex: 0 0 130px;
+        }
+    }
+    .novelty {
+        padding: 60px 0;
+        &__logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        &__body {
+            width: 275px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+        &__img {
+            width: 250px;
+        }
+        &__links {
+            width: 257px;
+        }
+        &__link {
+            font-size: 12px;
+            line-height: 21px;
+        }
+        &__soon {
+            font-size: 12px;
+            line-height: 21px;
+        }
+    }
+    .products {
+        &__wrapper {
+            display: block;
+        }
+        &__item {
+            display: block;
+            margin-bottom: 130px;
+        }
+        &__img {
+            width: 180px;
+            margin: 0 auto 10px auto;
+            &_big {
+                width: 250px;
+                margin: 0 auto 10px auto;
+            }
+        }
+        &__logo {
+            width: 125px;
+            margin: 0 auto 35px auto;
+        }
+        &__text {
+            width: 190px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 19px;
+            text-align: center;
+            margin: 0 auto 0 auto;
+        }
+        &__price {
+            font-size: 16px;
+            line-height: 30px;
+            margin: 12px auto 8px auto;
+        }
+        &__btn {
+            width: 140px;
+            font-size: 12px;
+            margin: 0 auto;
+        }
+        &__soon {
+            text-align: center;
+            margin-top: 36px;
+            font-size: 12px;
+            line-height: 21px;
+        }
+    }
+    .about {
+        padding: 30px 0;
+        &__title {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 6px;
+            margin-top: 50px;
+        }
+        &__btn {
+            width: 184px;
+            font-size: 12px;
+            line-height: 38px;
+            height: 38px;
+        }
+        &__wrapper {
+            grid-template: minmax(500px, auto) minmax(400px, auto) minmax(400px, auto) / 100%;
+            row-gap: 8px;
+        }
+        &__shops {
+            padding: 0 10px 75px 10px;
+            width: calc(100% + 20px);
+            margin-left: -10px;
+        }
+        &__map {
+            height: 375px;
+            width: calc(100% + 20px);
+            margin-left: -10px;
+        }
+        &__item {
+            width: calc(100% + 20px);
+            margin-left: -10px;
+            @include adaptiv-value("padding-left", 52, 25, 1);
+            @include adaptiv-value("padding-right", 52, 25, 1);
+            &-title {
+                font-size: 16px;
+                margin-bottom: 20px;
+                max-width: 140px;
+            }
+        }
+        &__content {
+            min-width: 185px;
+            &_app {
+                min-width: 120px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 19px;
+            margin-bottom: 36px;
+            max-width: 185px;
+            &_app {
+                max-width: 120px;
+            }
+        }
+        &__link {
+            width: 94px;
+            span {
+                font-size: 12px;
+            }
+        }
+        &__pod {
+            flex:0 0 65px;
+        }
+        &__app {
+            flex: 0 0 145px;
+        }
+    }
+}

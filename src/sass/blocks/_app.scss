@@ -1,0 +1,41 @@
+.app {
+    overflow: hidden;
+    padding: 50px 0;
+    // .app__wrapper
+    &__wrapper {
+        padding: 150px 120px;
+        background-color: #F9F9F9;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // .app__body
+    &__body {
+        flex: 0 0 448px;
+    }
+    // .app__title
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 45px;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+    // .app__text
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        span {
+            font-weight: 500;
+        }
+    }
+    // .app__img
+    &__img {
+        flex: 0 1 558px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
